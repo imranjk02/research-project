@@ -1,4 +1,4 @@
-
+werkzeug
 Django
 python-dotenv
 gunicorn
@@ -11,3 +11,4 @@ opencv-python-headless
 pytesseract
 google-generativeai
 requests
+dnspython
