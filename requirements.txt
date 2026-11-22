@@ -9,6 +9,6 @@ Pillow
 numpy
 opencv-python-headless
 pytesseract
-google-generativeai
+google-genai
 requests
 dnspython
