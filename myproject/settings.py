@@ -28,9 +28,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
+    "research-project-1-te24.onrender.com",
     "research-project-k3v2.onrender.com",
     "localhost",
     "127.0.0.1",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://research-project-1-te24.onrender.com",
 ]
 # Application definition
 
