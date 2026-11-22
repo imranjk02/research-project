@@ -1,0 +1,13 @@
+
+Django
+python-dotenv
+gunicorn
+whitenoise
+dj-database-url
+psycopg2-binary
+Pillow
+numpy
+opencv-python-headless
+pytesseract
+google-generativeai
+requests
