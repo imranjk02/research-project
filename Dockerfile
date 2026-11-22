@@ -1,4 +1,3 @@
-
 FROM python:3.14-slim
 
 RUN apt-get update && apt-get install -y \
@@ -13,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "myproject.wsgi:application", "--bind", "0.0.0.0:10000"]
+CMD ["sh", "-c", "python manage.py collectstatic --noinput && python manage.py migrate && gunicorn myproject.wsgi:application --bind 0.0.0.0:10000"]
